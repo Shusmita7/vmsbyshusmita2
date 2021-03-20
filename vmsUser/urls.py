@@ -20,9 +20,10 @@ from User import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', views.home, name = 'Home'),
+    path('notice/', views.notice, name = 'Notice'),
     path('requisition/', views.requisitionform, name = 'requisitionForm'),
     path('history/', views.mycost, name = 'myCost'),
     # path('', views. , name = ''),
     # path('', views. , name = ''),
-    # path('', views. , name = ''),
+    
 ]
