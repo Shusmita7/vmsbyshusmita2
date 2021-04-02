@@ -16,6 +16,11 @@
 </head>
 
 <body>
+    <form method="POST" action="{% url 'adminAddVehicle' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+         <!-- <button type="submit" class="btn btn-secondary"></button> -->
+     </form>
 
 <div>
     {% include 'adminnavbar.html' %}
@@ -63,7 +68,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> 
 </body>
 
 </html>
